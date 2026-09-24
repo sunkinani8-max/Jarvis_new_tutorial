@@ -21,4 +21,3 @@ async def search_web(context: RunContext, query: str) -> str:
     except Exception as e:
         logger.error(f"Error occurred while searching the web for query '{query}': {e}")
         raise ToolError(f"Failed to search the web for '{query}': {e}") from e
-
